@@ -1,0 +1,25 @@
+[package]
+name = "infinite-arrays"
+version = "0.1.0"
+edition = "2021"
+authors = ["Huzefa Aziz"]
+description = "A Rust library for representing arrays with infinite dimension sizes"
+license = "MIT"
+repository = "https://github.com/huzefaAziz/infinite_arrays_py"
+
+[lib]
+name = "infinite_arrays"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+ndarray = "0.16"
+nalgebra = "0.33"
+num-complex = "0.4"
+num-traits = "0.2"
+
+[dev-dependencies]
+approx = "0.5"
+
+[features]
+default = []
+
